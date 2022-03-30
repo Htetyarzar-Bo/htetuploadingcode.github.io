@@ -107,19 +107,15 @@
  #nav-menu.active .scroll{
     width: 280px;
  }
-.nav-text{
-    justify-content: start;
-    list-style: none;
-    height:50px;
-    padding: 1rem;
-}
-.nav-text a{
+
+   
+ .nav-section li a{
     text-decoration: none;
     font-size: 1rem;
     margin-left: 0.1rem;
    
 }
-.nav-text:hover{
+.nav-section li:hover{
     background-color:#ffffff;
     width: 242px;
     cursor: pointer;
@@ -133,6 +129,10 @@
     display: none;
 }
 .nav-section li{
+    justify-content: start;
+    list-style: none;
+    height:50px;
+    padding: 1rem;
     height:auto ;
     width: 260px;
     border-bottom: 1px solid rgb(43, 42, 42);
@@ -171,7 +171,6 @@
     width: 210px; 
     height: 70px;
     line-height: 60px;
-    
     text-transform: lowercase;
     display: none;
     border-bottom: 2px solid #3b3939;
