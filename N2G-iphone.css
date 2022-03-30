@@ -74,16 +74,17 @@
         position: absolute;
         margin-left: 260px;
     }
+ 
 
     .Gram-list h2 span{
-        font-size: 17px;
+        font-size: 25px;
     }
     
     .Gram-list h2 span::before{
-        font-size: 18px;
+        font-size: 26px;
     }
     .Gram-list h2 span::after{
-        font-size: 18px;
+        font-size: 26px;
     }
     .wrapper{
         width: 200px;
@@ -110,14 +111,15 @@
         width: 90%;
        margin-top: 0;  
     }
+   
     .Gram-list h2{
         color: #12121d;
-         font-size: 15px;
+        font-size: 22px;
          letter-spacing:1px;
      }
      .Gram-list p{
        
-         font-size: 12px;
+         font-size: 15px;
          letter-spacing:1px;
      }
 
