@@ -41,9 +41,13 @@
         font-size: 15px;
         letter-spacing: 0.5px;
     }
-    #navbar-toggle .menu-bars{
+     #navbar-toggle .menu-bars{
+      
         width:20px;
-        font-size: 20px;
+        font-size: 30px;
+    }
+    #nav-menu.active .menu-bars{
+        width: 40px;
     }
     .nav-section li {
         max-height:80 ;
