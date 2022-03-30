@@ -7,13 +7,14 @@
    
     #nav-menu{
         position:fixed;
-        width: 0px;
+         /*  width: 0px;*/
+        margin-left: -300px;
         height: 100vh;
       
     }
     #nav-menu.active{
-       
-        width:300px;
+         /*  width:300px;*/
+        margin-left: 0px;
     }
     .nav-menu-items{
         width: 300px;
