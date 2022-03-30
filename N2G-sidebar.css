@@ -30,7 +30,8 @@
     background-color: #eeebeb;
     margin:5px;
     margin-bottom:5px;
-    width: 0px;
+   /*  width: 0px;*/
+    margin-left: -300px;
     height: 730px;
     display:flex;
     position:fixed;
@@ -44,7 +45,8 @@
 
 #nav-menu.active{
     border-right: 1px solid#080808;
-    width:300px;
+    /*  width:300px;*/
+    margin-left: 0px;
 }
 .nav-menu-items{
     width: 290px;
@@ -97,7 +99,6 @@
 
 .scroll{
     width: 270px;
-    background-color: #eeebeb;
     display: block;
     position: absolute;
     height:620px;
