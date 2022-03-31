@@ -51,9 +51,10 @@
     }
  
     .nav-section li {
+        margin-left:5px;
         max-height:90 ;
         width:100%;
-        border-bottom: 1px solid #fff;
+        border-bottom: 2px solid #fff;
     }
     .nav-section li a{
         width:100%;
@@ -77,14 +78,14 @@
  
 
     .Gram-list h2 span{
-        font-size: 25px;
+        font-size: 22px;
     }
     
     .Gram-list h2 span::before{
-        font-size: 26px;
+        font-size: 24px;
     }
     .Gram-list h2 span::after{
-        font-size: 26px;
+        font-size: 24px;
     }
     .wrapper{
         width: 200px;
