@@ -148,7 +148,8 @@ body{
 }
 .header p span,
 .subheader p span{
-    color: #f32b67;
+   color: #f32b67;
+    font-weight: 900;
 }
 
 .furigana {
@@ -176,7 +177,8 @@ body{
 }
 
 .subheader-2 p span{
-    color: red;
+    color: #f32b67;
+    font-weight: 900;
 }
 
 ::-webkit-scrollbar{
