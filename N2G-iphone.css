@@ -1,24 +1,29 @@
 @media only screen and (max-width: 414px) {
 
     #navbar{
-        position: fixed;
+        
         height: 20px;
+        text-align: left;
     }
-   .navbar-option{
-        width: 100%;
+    .navbar-option{
+      
+        width: 200px;
         font-size: 15px;
        margin-left: 0px;
-       justify-content: center;
-       text-align: center;
+     
+       
     }
+
     #nav-menu{
         position:fixed;
         margin-left: -250px;
+   /* width: 0px;*/
         height: 100vh;
       
     }
     #nav-menu.active{
         margin-left: 0px;
+        /*width:250px;*/
     }
     .nav-menu-items{
         width: 250px;
@@ -112,7 +117,10 @@
         margin-left: 20px;
         font-size: 18px;
     }
-
+    .Grammer-Group.active{  /* vocabulary search bar close /open*/
+        width: calc(100% - 350px);
+        height:auto;
+     }
     .grammer{
        
         width: 90%;
@@ -134,14 +142,25 @@
         display: none;
     }
 
+    .Def-box{
+        display: block;
+        position:fixed;
+        width: 100px;
+        height: 400px;
+    }
     
+.subsearch-box input{
+    width: 100px;
+    height: 20px;
+   
+  }
+
     .fontChange-container{
-        width:400px;
-        height: 50px;
+        width:50px;
+        height:80px;
    
     }
     
-
     button{
   
         width: 30px;
@@ -151,12 +170,14 @@
         border-radius: 20%;
     }
     .theme-change{
+        left: 40px;
+        top: -20px;
         width: 130px;
         margin:0 0 0 10px;
         align-items: center;
     }
-    .theme-change p{
-        font-family: 'Open Sans';
+    .Day-mode{
+       width: 100px;
         font-weight: 400;
         font-size: 10px;
     }
@@ -181,5 +202,12 @@
     }
     .dark-theme .Gram-list h2{
         color: #ffffff;
+    }
+
+    #Defopen{
+        right:50px;
+    }
+    #Close-Btn{
+        right:50px;
     }
 }
