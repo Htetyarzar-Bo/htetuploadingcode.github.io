@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese N4 Grammer </title>
+    <link rel="stylesheet" href="N2G.css">
+    <link rel="stylesheet" href="N2Gtheme.css">
+    <link rel="stylesheet" href="N2G-fontChange.css">
+    <link rel="stylesheet" href="N2G-sidebar.css">
+    <link rel="stylesheet" href="N2G-iphone.css">
+    <link rel="stylesheet" href="N2G-searchbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+   
+</head>
+<body>
+    <div class="Gramma-Theme">
+        <div id="navbar">
+        
+        
+            <p class="navbar-option">Japanese Grammar(N4)</p>
+
+        
+            <i class="fas fa-caret-down nav_toggle"></i>
+
+            <div class="fontChange-container" id="fontChange-container">
+                <div class="fontChange">
+                    <button onclick="changeFontSize('increase')">A+</button>
+                    <button onclick="changeFontSize('decrease')">A-</button>
+                </div>
+                <div class="theme-change">
+                    <input type="checkbox" id="toggle">
+                    <p class="Day-mode">Day Mode</p>
+                </div>
+            
+            </div>
+        
+            <!------------dictionary search box ကို ဖွင့်ဖို့ start------------------------>
+            <div class="icons">
+            
+                <i id="Defopen" class="fas fa-search"></i>
+   
+           
+                <i id="Close-Btn" class="fas fa-times"></i>
+            
+            </div>
+         <!------------dictionary search box ကို ဖွင့်ဖို့ end ------------------------>
+           
+        </div>
+    <!---------------------------------------------------------------------->
+<nav class="flex">
+    <!-------------------SIDE-BAR start-------------------------------------------->
+    <div id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <!--<h1>LESSONS</h1>-->
+                <div class="wrapper">
+                    <div class="search-input">
+                        <input type="text" name="" placeholder="search...">
+                        <div class="autocom-box">
+                         <!--<li></li>  -->
+                        </div>
+        
+                         <!--<div class="icon"><i class="fas fa-search"></i></div> -->
+                         <div class="icon"><i class="fas fa-times"></i></div> <!--ဖျက်ဖို့ ကြက်ခြေခတ်  -->
+                         
+                    </div>
+                    
+                </div>
+                
+                <p class="address"> </p>
+
+                <a href="#" class="menu-bars" id="hide-menu"><i class="fas fa-bars nav-icon"></i></a>
+            </div>
+
+            <div class="scroll">
+                <hr/>
+                <div class="nav-section">
+         <!--   <li class="nav-text"><a href="#kaneru">(1) かねる</a></li>
+                
+                -->
+              
+                </div>
+            </div>
+        </ul>
+    </div>
+    <!------------------------ SIDE-BAR END ------------------------------------------->
+   
+   
+    <div class="Grammer-Group">
+        <div class="Def-box">
+
+            <div class="CloseBtn">
+                <h3>Mean of selected word</h3>
+            </div>
+
+            <div class="subsearch-box">
+                <input type="text" id="search" placeholder="Search...">
+            
+                <div class="cancel-btn">
+                <i class="far fa-times-circle"></i>
+                </div>
+
+            </div>
+
+            <p id="word">kanji</p>
+            <p id="yomi">furigana</p>
+            <h4 id="mean">မြန်မာစာ</h4>
+            <p class="img_cover"> <img id="image"></p>
+            <p id="remark">မှတ်ချက်</p>
+    
+        </div>
+        
+        <div class="selectable-text-area">
+
+            <div id="dai26ka" class="grammer">
+                <div class="Gram-list">
+                    <h2><span>1</span> 第26か</h2>
+                    
+                    
+                </div>
+                
+                <div class="header">
+                    <h3 id="ndesu">1. んです/~のです</h3>
+                    <p>(~လို့ပါ)</p>
+                    <p>のです---->စာရေးသားရာတွင် သုံးသည်</p>
+                    <p>んです---->စကားပြောရာတွင် သုံးသည်</p>
+                    <p>V(plain form)(Dictionary F)(ない)(た)(なかった) + んです/のです</p>
+                    <p>い(plain form)(い)(くない)(かった)(くなかった) +  んです/のです</p>
+                    <p>な(plain form)(な)(じゃない)(だった)(じゃなかった) + んです/のです</p>
+                    <p>N(plain form)(Nな)(じゃない)(だった)(じゃなかった) + んです/のです</p>
+                   
+                    <div class="subheader">
+                        <p>バスが来なかったんです。</p>
+                        <p>バスがこなかったんです。</p>
+                        <p class="Myan-def">ဘတ်စ်ကား မလာခဲ့လို့ပါ။</p>
+                        <p>苦いんです。</p>
+                        <p>にがいんです。</p>
+                        <p class="Myan-def">ခါးလို့ပါ။</p>
+                        <p>綺麗なんです。</p>
+                        <p>きれいなんです。</p>
+                        <p class="Myan-def">လှလို့ပါ။</p>
+                        <p>明日から旅行なんです。</p>
+                        <p>あしたからりょこうなんです。</p>
+                        <p class="Myan-def">မနက်ဖြန်ကစ၍ ခရီးသွားမလို့ပါ။</p>
+                        
+                    </div>
+                    
+                
+
+                    <h3 id="ndesuga">2. ~んですが</h3>
+                    <p>(~တာကြောင့် ၊ ~လို့)</p>
+                    <p>*တစ်ခုခုပြုလုပ်ချင်တာကြောင့် ၊ပြုလုပ်ချင်လို့</p>
+                    <div class="subheader-2">
+                        <p>雨なんですが、</p>
+                        <p>あめなんですが、</p>
+                        <p class="Myan-def">မိုးရွာတာကြောင့်၊ မိုးရွာလို့ </p>
+                       
+                    </div>
+                    
+                    <h3 id="teitakemasenka" >3. ていただけませんか</h3>
+                    <p>(~ ပေးလို့ရမလား၊ ~ ပေးပါ)</p>
+                    <p>*ယဉ်ကျေးစွာ လုပ်ခိုင်းရာတွင်သုံးသည်။(ကြီးသူ)</p>
+                    <p>*Vてください---->(ရွယ်တူ၊ ငယ်သူ)</p>
+                    <p>Verb(て form) + ていただけませんか</p>
+                    <div class="subheader-2">
+                        <p>書き方がわからないんですが、おしえて     いただけませんか。</p>
+                        <p>かきかたがわからないんですが、おしえていただけませんか。</p>
+                        <p class="Myan-def">ရေးပုံရေးနည်းကို နားမလည်တာကြောင့်  ပြောပြပေးလို့ရမလား၊ ပြောပြပေးပါ။</p>
+                      
+                    </div>
+               
+                    <h3 id="taraiidesuka">4. たらいいですか</h3>
+                    <p>(∼　ရင်ကောင်းမလဲ(မေးခွန်းစာလုံး))</p>
+                    <p>verb(た　form) + たらいいですか</p>
+                    <p>အကြံဉာဏ်တောင်းရာတွင်သုံးသည်။</p>
+                    <p></p>
+                    <div class="subheader-2">
+                        <p>保険証をわすれたんですが、どうしたらいいですか。</p>
+                        <p>ほけんしょうをわすれたんですが、どうしたらいいですか。</p>
+                        <p class="Myan-def">အာမခံကဒ်ကို မေ့ခဲ့တာကြောင့် ဘယ်လိုလုပ်ရင်ကောင်းမလဲ။</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="dai27ka" class="grammer">
+                <div class="Gram-list">
+                    <h2><span>2</span>第27か</h2>
+                    <h2>かのうけい</h2>
+                    <p>(Vနိုင်သည် ၊Vတတ်သည်)(စွမ်းရည်ပြပုံစံ)</p>
+                    
+                </div>
+                
+                <div class="header">
+                    <p>VI ဆိုရင် えအတန်းပြောင်း ます/るပေါင်း</p>
+                    <div class="subheader-2">
+                        <p>飲みます　→　飲めます/飲める</p>
+                        <p>読みます　→　読めます/読める</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                    </div>
+                   
+                    <p>VII ဆိုရင်ますဖြုတ်られます/られるပေါင်း</p>
+                    <div class="subheader-2">
+                        <p>食べます　→　食べられます/食べられる</p>
+                        <p>出ます　→　出られます/出られる</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                    </div>
+                   
+                    <p>VIII ဆိုရင်  </p>
+                   
+                    <div class="subheader-2">
+                        <p>きます/くる ဆို  こられます/こられる(လာနိုင်သည်)</p>
+                        <p>します/するဆို  できます/できる(လုပ်နိုင်သည်)</p>
+                        <p>Nします/Nするဆို N できます/Nできる</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                    </div>
+                    
+                    <p>*ခံစားချက်V တွေကိုかのうかい စွမ်းရည်ပြပုံစံ မပြောင်းနိုင်ပါ</p>
+                    <p>こまる、まにあう、つかれる、なれる、びょうきになる</p>
+                    <p>*かのうけいရှေ့တွင် များသောအားဖြင့် particle がလိုက်တယ်</p>
+                    <h3 id="gadekimasu">1. N ができます。</h3>
+                    <p class="Myan-def">(Nကို တည်ဆောက်သည်၊ပြီးမြောက်သည်၊ပြုလုပ်သည်)</p>
+                  
+                    <div class="subheader">
+                        <p>料理ができました。</p>
+                        <p>りょうりができました。</p>
+                        <p class="Myan-def">(ဟင်းချက်ပြီးပြီ)</p>
+                        <p>家ができました。</p>
+                        <p>いえができました。</p>
+                        <p class="Myan-def">(အိမ်ကို ဆောက်လုပ်ပြီးပြီ)</p>
+
+                    </div>
+                    <h3 id="shika-masen">2. N~しか~ません/ない(က လွဲပြီး၊ မှလွဲပြီး)</h3>
+                    <p>(အဲ့Nတစ်မျိုးကလွဲပြီး မVဘူး)</p>
+                    <div class="subheader">
+                        <p>私は彼しかすきません。</p>
+                        <p>わたしはかれしかすきません。</p>
+                        <p class="Myan-def">ကျွန်မသည် ကောင်လေးကလွဲပြီး မချစ်ဘူး။</p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    <h3 id="hagaha">3.は~が~は</h3>
+                    <p>N1 は ます がN2 は ません。</p>
+                    <p>(~ ပေမဲ့)</p>
+                        <div class="subheader">
+                            <p>山は見えますが、海は見えません。</p>
+                            <p>やまはみえますが、うみはみえません。</p>
+                            <p class="Myan-def">တောင်ကို မြင်နိုင်ပေမဲ့ ပင်လယ်ကို မမြင်နိုင်ဘူး</p>
+                            <p>*かのうけいရှေ့ဖြစ်သော်လည်း がမလိုက်ပါ။(は~が~は)ပုံစံအတိုင်းပဲရေးရမည်။</p>
+                            <p></p>
+                            <p class="Myan-def"></p>
+                            <p></p>
+                            <p></p>
+                            <p class="Myan-def"></p>
+                        
+                        </div> 
+                </div>
+                
+            </div>
+
+
+            <div id="dai28ka" class="grammer">
+                <div class="Gram-list">
+                    <h2><span>3</span>第28か</h2>
+                    <h2>~ ながら  </h2>
+                    <p>(~ ရင်းနဲ့ )</p>
+                    
+                </div>
+                
+                <div class="header">
+                    <h3 id="nagara">1. V（ますဖြုတ်）＋ ながら</h3>
+                    <p>*အလုပ်နှစ်ခုကိုတစ်ပြိုင်တည်းလုပ်ကြောင်းပြောရင်သုံးတယ်</p>
+                    <p>*ながらနောက်က လုပ်ရပ်က အဓိက လုပ်ရပ်ဖြစ်တယ်</p>
+                    <div class="subheader-2">
+                        <p>私は働きながら日本語を便上しています。</p>
+                        <p>わたしははたらきながらにほんごをびんじょうしています。</p>
+                        <p class="Myan-def">ကျွန်ပ်သည် အလုပ်လုပ်ရင်းနဲ့ ဂျပန်စာကို လေ့လာနေတယ်။</p>
+                    </div>
+                    <h3 id="vteimasu">2. V ています</h3>
+                    <p>(Vနေတယ် ၊ Vလေ့ရှိတယ်)</p>
+                    <div class="subheader-2">
+                      
+                        <p>パソコンでゲームをしています。</p>
+                        <p class="Myan-def">ကွန်ပျူတာ ဖြင့် ဂိမ်းကစားနေတယ်။</p>
+                        
+                    </div>
+                    <h3 id="moshi~moshi">3.も~し~も~し</h3>
+                   
+                    <p>N 1も~し、N2も~し、それに----</p>
+                    <p>(N1 လည်းပဲ ~တဲ့အပြင်、N2 လည်းပဲ~တဲ့အပြင် 、အဲ့ဒါအပြင်----)</p>
+                    <p>Plain form　＋ し</p>
+                    <p>*နှစ်ခုထပ် ပိုတဲ့ ဂုဏ်ရည်တူအကြောင်းအရာတွေကို တန်းစီပြီးပြောရာတွင်သုံးသည်။</p>
+                    <div class="subheader-2">
+                        <p>私の先生はねっしんだし、おもしろいし、それにけいけんもあります。</p>
+                        <p>わたしのせんせいはねっしんだし、おもしろいし、それにけいけんもあります。</p>
+                        <p class="Myan-def">ကျွန်မရဲ့ဆရာမက ဝီရိယရှိတဲ့အပြင် စိတ်ဝင်စားစရာလည်းကောင်းတဲ့အပြင် အဲ့ဒါအပြင် အတွေ့အကြုံလည်းရှိတယ်။</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="dai29ka" class="grammer">
+                <div class="Gram-list">
+                    <h2><span>3</span>第29か </h2>
+                    <p>1.どうし(ကြိယာ)2မျိုးရှိသည်။</p>
+                    <p>* じどうし(ဖြစ်ခြင်းပြကြိယာ)</p>
+                    <p>* たどうし(ပြုခြင်းပြကြိယာ)</p>
+                    
+                </div>
+                
+                <div class="header">
+                    <h3 id="Ngateimasen">N が/は  Vています。(じどうし)</h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="subheader">
+                        <p>車がとまっています。</p>
+                        <p>くるまがとまっています。</p>
+                        <p class="Myan-def">ကားကရပ်ထားတယ်။</p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="" class="grammer">
+                <div class="Gram-list">
+                    <h2><span></span> </h2>
+                    <p></p>
+                    
+                </div>
+                
+                <div class="header">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="subheader">
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="" class="grammer">
+                <div class="Gram-list">
+                    <h2><span></span> </h2>
+                    <p></p>
+                    
+                </div>
+                
+                <div class="header">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="subheader">
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="" class="grammer">
+                <div class="Gram-list">
+                    <h2><span></span> </h2>
+                    <p></p>
+                    
+                </div>
+                
+                <div class="header">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="subheader">
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="" class="grammer">
+                <div class="Gram-list">
+                    <h2><span></span> </h2>
+                    <p></p>
+                    
+                </div>
+                
+                <div class="header">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="subheader">
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                        <p></p>
+                        <p></p>
+                        <p class="Myan-def"></p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+            
+        </div>
+
+          <!-------------------- active control start ---------------------->
+   
+            
+                <!---------------------------"Grammer-Group"-------------------------------->
+
+    </div>
+
+</nav>
+</div>
+</body>
+<script src="NG.js"></script>
+<script src="NG-FontChange.js"></script>
+<script src="NG-selectsearch.js"></script>
+<script src="N4G-search.js"></script>
+<script src="N4G-searchAddress2.js"></script>
+<script src="SearchingTwithObject.js"></script>
+<!--<script src="N2G-searchAddress.js"></script>-->
+</html>
