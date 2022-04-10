@@ -30,8 +30,8 @@
     background-color: #eeebeb;
     margin:5px;
     margin-bottom:5px;
-   /*  width: 0px;*/
     margin-left: -300px;
+    /* width: 0px;*/
     height: 730px;
     display:flex;
     position:fixed;
@@ -44,9 +44,9 @@
 }
 
 #nav-menu.active{
-    border-right: 1px solid#080808;
-    /*  width:300px;*/
+    border-right: 1px solid #080808;
     margin-left: 0px;
+    /*width:300px;*/
 }
 .nav-menu-items{
     width: 290px;
@@ -98,8 +98,8 @@
 }
 
 .scroll{
-    background-color: #eeebeb;
     width: 270px;
+    background-color: #eeebeb;
     display: block;
     position: absolute;
     height:620px;
@@ -109,18 +109,35 @@
  #nav-menu.active .scroll{
     width: 280px;
  }
+.nav-text,.nav-textC{
+    justify-content: start;
+    list-style: none;
+    height:50px;
+    padding: 1rem;
+}
 
+.nav-textC{
+    background-color: #d1cece;
+}
+.nav-text a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
    
- .nav-section li a{
+}
+.nav-textC a{
     text-decoration: none;
     font-size: 1rem;
     margin-left: 0.1rem;
-   
+    font-weight: 700;
 }
-.nav-section li:hover{
+.nav-text:hover,.nav-textC:hover{
     background-color:#ffffff;
     width: 242px;
     cursor: pointer;
+}
+.nav-textC:hover{
+    background-color:#f0ebeb;
 }
 
 .nav-section{
@@ -131,10 +148,6 @@
     display: none;
 }
 .nav-section li{
-    justify-content: start;
-    list-style: none;
-    height:50px;
-     padding: 1.3rem;
     height:auto ;
     width: 260px;
     border-bottom: 1px solid rgb(43, 42, 42);
@@ -173,6 +186,7 @@
     width: 210px; 
     height: 70px;
     line-height: 60px;
+    
     text-transform: lowercase;
     display: none;
     border-bottom: 2px solid #3b3939;
