@@ -4,13 +4,35 @@ const suggBox = searchWrapper.querySelector(".autocom-box");
 const Icon = document.querySelector(".icon");
 
  let suggestions =[
-    "んです/~のです"　          , "ndesu" ,
-    "ていただけませんか"　      , "teitakemasenka" ,
-    "たらいいですか"　          , "taraiidesuka" ,
-    "かのうけい"　              , "kanoukei" ,
-    "N ができます"　            , "gadekimasu" ,
-    "N~しか~ません/ない"　       , "shika-masen" ,
-    "は~が~は"　                , "ga" ,
+    'dai26ka','第26か (んです/~のです)',
+  'ndesu','1. んです/~のです',
+  'ndesuga','2. んですが',
+  'teitakemasenka','3. ていただけませんか',
+  'taraiidesuka','4. たらいいですか',
+  'dai27ka','第27か (かのうけい)',
+  'gadekimasu','1. N ができます。',
+  'shika-masen','2. N~しか~ません/ない',
+  'hagaha','3. は~が~は',
+  'dai28ka','第28か (~ながら)',
+  'nagara','1. V（ますဖြုတ်）＋ ながら',
+  'vteimasu','2. V ています',
+  'moshi~moshi','3. も~し~も~し',
+  'dai29ka','第29か',
+  'Ngateimasen','1.N が/は Vています',
+  'woteimasu','2.N をV ています',
+  'hateshimaimasu','3.N はVてしまいます',
+  'hateshimaimashita','4.N はVてしまいました',
+  'dai30ka','第30か',
+  'tearimasu','1.Vてあります',
+  'teokimasu','2.V ておきます',
+  'madateimasu','3.まだVています',
+  'dai31ka','第31か',
+  'ikoukei','1.いこうけい',
+  'ikoukeitoomotteimasu','2.いこうけい ＋とおもっています',
+  'madateimasen','3.まだVていません',
+  'tsumoridesu','4.V.DF/Vない＋つもりです',
+  'yoteidesu','5.V. DF/Vない/Nの＋よていです',
+  
 ]
 
 //if user press any key and release
