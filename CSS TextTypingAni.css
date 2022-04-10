@@ -48,12 +48,12 @@
   }
 }
 
-@media screen and (max-width:416px)  {
+@media screen and (max-width:414px) {
   .wrapper .dynamic-txts{
       height: 80px;
       line-height: 80px;
   }
   .dynamic-txts li{
-      font-size: 10px;
+      font-size: 20px;
   }
 }
