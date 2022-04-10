@@ -2,7 +2,7 @@
   margin-right: 10px;
 }
 
-#Defopen{   /* open icon*/
+#Defopen{
   float: right;
   background: #bcbfc0;
   position: absolute;
@@ -24,7 +24,7 @@
   display: none;
 }
 
- #Close-Btn{ /* close icon*/
+ #Close-Btn{
   background: #bcbfc0;
   top:0px;
   border: 2px solid #202122;
@@ -57,7 +57,7 @@
   line-height: 40px;
   color: #304658; 
   background: #ebeaea;
-  z-index: 1;
+  
 }
 
 .CloseBtn{
@@ -153,3 +153,63 @@ font-size:25px ;
 }
 
 
+@media only screen and (max-width: 414px) {
+  #Defopen{
+    right:50px;
+}
+#Close-Btn{
+    right:50px;
+}
+
+  .Def-box{
+    width: 250px;
+    height: 600px;
+}
+.Grammer-Group.active{  /* vocabulary search bar close /open*/
+  width: calc(100% - 290px);
+  height:auto;
+}
+.subsearch-box input{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  padding:0 40px 0 20px;
+}
+.cancel-btn{
+  right: 35px;
+  top: 100px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+#word{
+  font-size: 20px;
+  margin: 30px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+#yomi{
+  margin: 10px;
+  height: 10%;
+}
+#mean{
+  margin:0 10px;
+  height: 40px;
+}
+#remark{
+  margin:80px 30px;
+  height: 40px;
+}
+
+.caption{
+line-height:60px ;
+padding: 5px;
+font-size: 5px;
+word-spacing: 10px;
+height: 45px;
+}
+
+}
