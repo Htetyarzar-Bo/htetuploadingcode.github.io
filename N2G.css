@@ -32,7 +32,7 @@ body{
     background: #fff;
     background-position: center;
     background-size: cover;
-    z-index: 3;
+   
     scroll-behavior: auto;
 }
 .Grammer-Group.active{  /* vocabulary search bar close /open*/
@@ -46,9 +46,8 @@ body{
     background-position: center;
     background-size: cover;
     width:100vw;
-    height:100vh;
-    z-index: 6;
-   
+    height:100vh;     /* 100vh ဖြစ်မှ searchbox ကို ဖွင့်တဲ့ အခါ scroll လုပ်နိုင်မယ်*/
+
 }
 .grammer{
     position: relative;
@@ -148,8 +147,8 @@ body{
 }
 .header p span,
 .subheader p span{
-   color: #f32b67;
-    font-weight: 900;
+    color: #f32b67;
+    font-weight: 600;
 }
 
 .furigana {
@@ -180,7 +179,14 @@ body{
     color: #f32b67;
     font-weight: 900;
 }
-
+table, th, td {
+    border: 1px solid black;
+    
+    margin: 10px;
+}
+th,td{
+    padding: 10px;
+}
 ::-webkit-scrollbar{
     width: 12px;
 }
@@ -244,6 +250,15 @@ body{
         z-index: 8;
         justify-content: center;
         
+    }
+    .home{
+        margin-left: 15px;
+    }
+    .home a{
+        margin-left: 30px;
+        margin: 10px;
+        padding: 5px;
+       
     }
     .fontChange-container .fontChange{
         margin-left: 50px;
